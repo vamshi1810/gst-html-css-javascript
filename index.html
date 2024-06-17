@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="hero">
+      <nav class="navbar">
+        <div class="logo">
+          <img src="./assets/logo.png" alt="logo" />
+          <h2>Taste Point</h2>
+        </div>
+        <div class="menu">
+          <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Biryani</a></li>
+            <li><a href="#">South Indian</a></li>
+            <li><a href="#">North Indian</a></li>
+          </ul>
+        </div>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+      <div class="main-content">
+        <div class="content">
+          <h1>Relish The Most Tempting</h1>
+          <h1>Delicious With Us</h1>
+          <div class="btn-group">
+            <button class="btn">Menu</button>
+            <button class="btn">Order Online</button>
+            <button class="btn">Book a Table</button>
+          </div>
+        </div>
+        <img src="./assets/hero1.png" />
+      </div>
+    </section>
+
+    <section class="south-indian">
+      <div class="south-indian-content">
+        <h1>South Indian</h1>
+      </div>
+      <div class="south-indian-images">
+        <div class="img-name">
+          <img src="./assets/idly.jpg" />
+          <div>Idly</div>
+        </div>
+        <div class="img-name">
+          <img src="./assets/brown-rice-dosa-recipe.jpg" />
+          <div>Dosa</div>
+        </div>
+        <div class="img-name">
+          <img src="./assets/vada.jpg" />
+          <div>Vada</div>
+        </div>
+        <div class="img-name">
+          <img src="./assets/appam.jpg" />
+          <div>Appam</div>
+        </div>
+
+        <div class="img-name">
+          <img src="./assets/rasam-featured-1.jpg" />
+          <div>Rasam</div>
+        </div>
+
+        <div class="img-name">
+          <img src="./assets/semiya-payasam.jpg" />
+          <div>Payasam</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="recipet">
+      <h1>Recipet</h1>
+      <form id="customer-bill-form">
+        <fieldset>
+          <legend>Customer Information:</legend>
+          <div class="user-details">
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter customer name "
+              class="customer-input"
+              id="customer-name"
+            />
+            <input
+              type="text"
+              name="last-name"
+              placeholder="Enter last name "
+              class="customer-input"
+              id="last-name"
+            />
+            <input
+              type="number"
+              name="phone"
+              placeholder="Enter phone number "
+              class="customer-input"
+              id="mobile-number"
+            />
+            <input
+              type="number"
+              name="phone"
+              placeholder="Invoice number "
+              class="customer-input"
+              id="recipet-no"
+            />
+          </div>
+        </fieldset>
+        <div class="items">
+        <div class="items-info">
+       
+        <fieldset>
+          <legend>Tandoor Items:</legend>
+          <div class="item-details">
+            <input
+              type="text"
+              name="name"
+              placeholder="Item name "
+              class="item-input"
+
+            />
+            <input
+              type="number"
+              name="qty"
+              placeholder="Quantity "
+              class="item-input"
+              id="item-quantity"
+            />
+            <input
+              type="number"
+              name="price"
+              placeholder="Price "
+              class="item-input"
+              id="number"
+            />
+          </div>
+        </fieldset>
+        </div>
+        <div class="items-info">
+
+        <fieldset>
+          <legend>Biryani Items:</legend>
+          <div class="item-details">
+            <input
+              type="text"
+              name="name"
+              placeholder="Item name "
+              class="item-input"
+
+            />
+            <input
+              type="number"
+              name="qty"
+              placeholder="Quantity "
+              class="item-input"
+              id="item-quantity"
+            />
+            <input
+              type="number"
+              name="price"
+              placeholder="Price "
+              class="item-input"
+              id="number"
+            />
+          </div>
+        </fieldset>
+        </div>
+        </div>
+
+        <fieldset>
+          <legend>GST Information:</legend>
+          <div class="user-details">
+            <input
+              type="number"
+              name="name"
+              placeholder="Enter GST "
+              class="customer-input"
+              id="GST"
+            />
+          
+          </div>
+        </fieldset>
+
+        <div class="submit-btn">
+          <button class="btn" type="submit">Submit</button>
+        </div>
+      </form>
+    </section>
+
+    <div id="invoice-container"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
